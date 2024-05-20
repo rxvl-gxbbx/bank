@@ -1,0 +1,20 @@
+# Spring
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bank_db
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+
+# App Properties
+com:
+  rxvlvxr:
+    bank:
+      jwtSecret: SECRET
+      jwtExpiration: 3600
